@@ -1,0 +1,59 @@
+USE artify;
+-- CREATE TABLE users (
+--     user_id INT PRIMARY KEY AUTO_INCREMENT,
+--     first_name VARCHAR(30) NOT NULL,
+--     last_name VARCHAR(30) NOT NULL,
+--     email VARCHAR(100) UNIQUE NOT NULL,
+--     user_password VARCHAR(50) NOT NULL,
+--     confirm_password VARCHAR(50)NOT NULL,
+--     user_image LONGBLOB,
+--     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+--     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+-- );
+
+-- CREATE TABLE admins(
+--     admins_id INT PRIMARY KEY AUTO_INCREMENT,
+--     first_name VARCHAR(30) NOT NULL,
+--     last_name VARCHAR(30)NOT NULL,
+--     email VARCHAR(100)UNIQUE NOT NULL,
+--     admins_password VARCHAR(50) NOT NULL,
+--     confirm_password VARCHAR(50),
+--     admins_image LONGBLOB,
+--     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+--     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+-- );
+-- CREATE TABLE products (
+--     product_id INT PRIMARY KEY AUTO_INCREMENT,
+--     product_name VARCHAR(30) NOT NULL UNIQUE,
+--     product_description VARCHAR(100),
+--     price DECIMAL(5,2) NOT NULL,
+--     product_image LONGBLOB,
+--     product_category VARCHAR(50)NOT NULL,
+--     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+--     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+-- );
+-- CREATE TABLE cart(
+--     product_id INT PRIMARY KEY AUTO_INCREMENT,
+--     product_name VARCHAR(30) NOT NULL UNIQUE,
+--     price DECIMAL(5,2) NOT NULL,
+--     product_image LONGBLOB,
+--     user_id INT,
+--     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+--     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+--     FOREIGN KEY(user_id) REFERENCES users(user_id) ON DELETE SET NULL
+-- -- );
+-- INSERT INTO cart (product_name, price, product_image, user_id) VALUES
+-- ("Sun flower", 149.99,"../assets/img/buildings/painting/2.jpeg", 3)
+-- ("Sunflowers", "A beautiful painting of a field of sunflowers", 149.99, "../assets/img/buildings/painting/2.jpeg", "Painting"),
+-- ("City Lights", "A mesmerizing photograph of a city skyline at night", 129.99, "../assets/img/buildings/painting/3.jpeg", "Photography"),
+-- ("Abstract Shapes", "A contemporary painting with bold, geometric shapes", 199.99,"../assets/img/buildings/painting/4.jpeg", "Painting"),
+-- ("Wildlife Safari", "An exciting photograph of wildlife on an African safari", 79.99,"../assets/img/buildings/painting/5.jpeg", "Photography"),
+-- ("Impression Sunrise", "A classic painting of a sunrise over a harbor", 249.99,"../assets/img/buildings/painting/6.jpeg", "Painting"),
+-- ("Ocean Waves", "A serene photograph of waves crashing on a beach", 89.99,"../assets/img/buildings/painting/7.jpeg", "Photography"),
+-- ("Portrait of a Lady", "A stunning painting of a woman with intricate details", 299.99,"../assets/img/buildings/painting/8.jpeg", "Painting"),
+-- ("Golden Gate Bridge", "A striking photograph of the Golden Gate Bridge in San Francisco", 109.99,"../assets/img/buildings/painting/9.jpeg", "Photography"),
+-- ("Still Life with Fruit", "A beautiful painting of a bowl of fruit with vivid colors", 179.99,"../assets/img/buildings/painting/10.jpeg", "Painting");
+-- DESCRIBE cart;
+-- DROP TABLE users;
+-- DELETE FROM users;
+SELECT * FROM cart;
