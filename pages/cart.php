@@ -61,9 +61,9 @@
     </nav>
 
     <!-- cart section -->
-    <section class="sec-cart">
-        <?php
-        $product_name = $_POST["product_name"];
+    <!-- <section class="sec-cart"> -->
+
+    <!-- $product_name = $_POST["product_name"];
         $product_description = $_POST["product_description"];
         $price = $_POST["price"];
         $product_image = $_POST["product_image"];
@@ -78,6 +78,7 @@
             $sqlquery = $connection->prepare("SELECT * FROM cart ");
             $sqlquery->execute();
             $result = $sqlquery->get_result();
+
 
             if ($result->num_rows == 0) {
                 echo "<div class=\"empty-cart\">
@@ -95,13 +96,13 @@
                 }
                 echo "</div>
                   <div class=\"cart-summary\">
-                    <!-- refer js for flesh -->
-                  </div>
+                    refer js for flesh -->
+    <!-- </div>
                 </div>";
             }
-        }
+        } -->
 
-        function products($product_name, $price, $product_image)
+    <!-- function products($product_name, $price, $product_image)
         {
             $productItem = "
              <div class=\"cart-item\">
@@ -117,11 +118,33 @@
                     <div class=\"item-price\">$price</div>
                 </div>
             </div>";
-            echo $productItem;
-        }
-        ?>
-    </section>
+            echo $productItem; -->
+    <!-- } -->
 
+    <!-- </section> -->
+    <section class="sec-cart">
+
+        <!-- empty cart -->
+
+        <!-- refer to js for flesh -->
+
+
+
+        <!-- full cart -->
+        <!-- <div class="full-cart"> -->
+        <!-- <div class="cart-product"> -->
+
+        <!-- refer to js for flesh -->
+
+        <!-- </div> -->
+
+        <!-- <div class="cart-summary"> -->
+        <!-- refer js for flesh -->
+        <!-- </div> -->
+
+
+        <!-- </div> -->
+    </section>
 
 
 

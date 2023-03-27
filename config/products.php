@@ -1,3 +1,5 @@
+ 
+
  <?php
     // 1. define variables for the product details from the database
     $product_name = $_POST["product_name"];
