@@ -131,19 +131,19 @@
 
 
         <!-- full cart -->
-        <!-- <div class="full-cart"> -->
-        <!-- <div class="cart-product"> -->
+        <div class="full-cart">
+            <div class="cart-product">
 
-        <!-- refer to js for flesh -->
+                <!-- refer to js for flesh -->
 
-        <!-- </div> -->
+            </div>
 
-        <!-- <div class="cart-summary"> -->
-        <!-- refer js for flesh -->
-        <!-- </div> -->
+            <div class="cart-summary">
+                <!-- refer js for flesh -->
+            </div>
 
 
-        <!-- </div> -->
+        </div>
     </section>
 
 

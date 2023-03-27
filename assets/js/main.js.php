@@ -10,7 +10,18 @@
         });
 
         // ADDING TO CART
-
+        var newProducts = [
+            <?php
+            $connection = new mysqli("localhost", "obinchu", "@Ibrahim1864", "artify");
+            $sqlquery = $connection->prepare("SELECT * FROM products");
+            $sqlquery->execute();
+            while ($rows = mysqli_fetch_all($result, MYSQLI_ASSOC)) {
+                $product_name = $rows["product_name"];
+                echo "$product_name";
+            }
+            ?>
+        ];
+        
         const cart = [];
         $(".cart").on('click', function() {
             addToCart(($(".cart").index(this)))
@@ -51,22 +62,22 @@
                     </div>`)
                 })
             } else {
-                return (
-                    `    <div class="full-cart">
-                             <div class="cart-product">
+                //         return (
+                //             `    <div class="full-cart">
+                //                      <div class="cart-product">
 
-                                 <!-- refer to js for flesh -->
+                //                          <!-- refer to js for flesh -->
 
-                             </div>
+                //                      </div>
 
-                             <div class="cart-summary">
-                                     <!-- refer js for flesh -->
-                                  </div>
+                //                      <div class="cart-summary">
+                //                              <!-- refer js for flesh -->
+                //                           </div>
 
 
-        </div>
-                    `
-                );
+                // </div>
+                //             `
+                //         );
                 $(".cart-product").html(cart.map(function(item) {
                     let {
                         name,

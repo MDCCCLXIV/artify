@@ -35,7 +35,7 @@
                 <?php
                 include("../config/userlogin.php");
 
-                echo $a->registration($_POST["firstname"], $_POST["lastname"], $_POST["email"], $_POST["passwd"], $_POST["confpasswd"]);
+                echo $a->registration($_POST["firstname"], $_POST["lastname"], $_POST["email"], $_POST["passwd"], $_POST["confpasswgitd"]);
 
 
                 ?>
